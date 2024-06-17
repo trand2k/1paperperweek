@@ -8,7 +8,7 @@ Basicly, Lora introduce an solution for trainning Large model with low-resource,
 
 The attention mechanism can be described by the following formula:
 
-```latex
+```math
 \[
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 \]
