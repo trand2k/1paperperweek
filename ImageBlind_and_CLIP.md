@@ -1,23 +1,21 @@
 # Mutimodal embedding model
-ImageBlind and CLIP is 2 multimodal embedding model
+ImageBind and CLIP are two multimodal embedding models.
 
-ImageBlind repo: https://github.com/facebookresearch/ImageBind
+- ImageBlind repo: https://github.com/facebookresearch/ImageBind
 
-CLIP repo: https://github.com/openai/CLIP
+- CLIP repo: https://github.com/openai/CLIP
 
-Key-idea of ImageBlind and CLIP is trainning an embedding model can take various input type in to same vector space. 
+The key idea behind ImageBind and CLIP is training an embedding model that can take various input types and map them into the same vector space.
 
-With CLIP , it is image and text
+- With CLIP, the inputs are images and text.
 
-With ImageBlind, It is Depth, text, heat-map, audio, IMU , image/video
+- With ImageBind, the inputs include depth, text, heat maps, audio, IMU data, and images/videos.
 
-This idea is interesting, trainning process have same idea with some face reg model. embedding various input type into an vector space, try to optimize distance of them if it mentioned to same thing. Using tripet loss or sth like that .... 
+This concept is intriguing. The training process is similar to some face recognition models that embed various input types into a vector space and optimize their distances if they refer to the same entity, often using triplet loss or similar techniques. While the current impact might not be significant, this approach has potential. Such models can be used for multimodal LLM retrieval or as a backbone for training downstream tasks.
 
-Maybe, It's not so much effect now, but i thought it is protential way, this kind of model can use for muti-modal LLM retrieval, or use as an backbone for tranning some down-stream task. 
+### My thoughts:
 
-My thought:
-- i have big question, can human feeling about a dog, a cat without sight ? Yes, of course, human understand evironment not base on only sight, hearing or tactile. 
-- AI can be more likely human if can fusion any sence for another specific task
-- 2 paper give protential way for fusion sensor, it helpful for self-driving car or human-robot ,.... some applicaion need more information than just image or text,... 
-
+- Can humans understand a dog or a cat without sight? Yes, of course. Humans comprehend their environment using not just sight but also hearing, touch, and other senses.
+- AI can become more human-like if it can fuse various senses for specific tasks.
+- These two papers offer a potential method for sensor fusion, which could be beneficial for applications like self-driving cars or human-robot interactions—situations where more information than just images or text is needed.
 
